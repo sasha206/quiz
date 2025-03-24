@@ -535,9 +535,6 @@ const QuizUkladuHormonalnego: React.FC = () => {
             <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#1f2937' }}>
               Quiz o Układzie Hormonalnym
             </h2>
-            <p style={{ fontSize: '0.875rem', color: '#4b5563' }}>
-              Gruczoł: {aktualnePytanie.gruczoł}
-            </p>
           </div>
           <Score>{wynik}</Score>
         </Header>
