@@ -152,6 +152,148 @@ const pytaniaUkladuHormonalnego: Gruczoł[] = [
           opcje: ["progesteron", "estrogen", "testosteron", "tymozyna"]
       }
     ]
+  },
+  {
+    gruczoł: 'Przysadka',
+    pytania: [
+         // ... (poprzednie pytania) ...
+      {
+        pytanie: "Który gruczoł wydziela prolaktynę?",
+        poprawnaPodpowiedź: "Przysadka",
+        opcje: ["Przysadka", "Tarczyca", "Jajniki", "Trzustka"]
+      },
+      {
+          pytanie: "Hormon wzrostu jest wydzielany przez...?",
+          poprawnaPodpowiedź: 'Przysadka',
+          opcje: ["Przysadka", "Nadnercza", "Szyszynka", "Grasica"]
+
+      },
+        {
+          pytanie: "Który gruczoł produkuje Hormony tropowe: TSH, ACTH, FSH i LH?",
+          poprawnaPodpowiedź: 'Przysadka',
+          opcje: ["Przysadka", "Nadnercza", "Tarczyca","Przytarczyce"]
+
+      },
+        {
+        pytanie: "Który gruczoł wydziela wazopresyne??",
+        poprawnaPodpowiedź: "Przysadka",
+        opcje: ["Przysadka", "Tarczyca", "Jajniki", "Trzustka"]
+      },
+      {
+          pytanie: "Oksytocyna jest wydzielany przez...?",
+          poprawnaPodpowiedź: 'Przysadka',
+          opcje: ["Przysadka", "Nadnercza", "Szyszynka", "Grasica"]
+
+      }
+    ]
+  },
+  {
+    gruczoł: 'Szyszynka',
+    pytania: [
+        // ... (poprzednie pytania) ...
+      {
+        pytanie: "Który gruczoł wydziela melatoninę?",
+        poprawnaPodpowiedź: "Szyszynka",
+        opcje: ["Szyszynka", "Przysadka", "Tarczyca", "Nadnercza"]
+      }
+    ]
+  },
+  {
+      gruczoł: 'Tarczyca',
+      pytania:[
+          // ... (poprzednie pytania) ...
+          {
+            pytanie: "Kalcytonina jest produkowana w...?",
+            poprawnaPodpowiedź: "Tarczyca",
+            opcje:["Tarczyca", "Przytarczyce", "Przysadka", "Nadnercza"]
+          },
+          {
+            pytanie: "Który gruczoł wydziela Tyroksyna i trójjodotyronina??",
+            poprawnaPodpowiedź: "Tarczyca",
+            opcje:["Tarczyca", "Przytarczyce", "Przysadka", "Nadnercza"]
+          }
+      ]
+  },
+  {
+      gruczoł: 'Przytarczyce',
+      pytania: [
+          // ... (poprzednie pytania) ...
+          {
+              pytanie: "Który gruczoł wydziela parathormon?",
+              poprawnaPodpowiedź: "Przytarczyce",
+              opcje:["Przytarczyce", "Tarczyca", "Przysadka", "Nadnercza"]
+          }
+      ]
+  },
+    {
+      gruczoł: 'Grasica',
+      pytania: [
+          // ... (poprzednie pytania) ...
+          {
+              pytanie: "Tymozyna jest wydzielana przez...?",
+              poprawnaPodpowiedź: "Grasica",
+              opcje:["Grasica", "Tarczyca", "Przysadka", "Nadnercza"]
+          }
+      ]
+  },
+  {
+      gruczoł: "Nadnercza",
+      pytania:[
+           // ... (poprzednie pytania) ...
+          {
+              pytanie: "Adrenalina jest produkowana przez?",
+              poprawnaPodpowiedź: "Nadnercza",
+              opcje:["Nadnercza","Trzustka", "Przysadka", "Jądra"]
+          },
+          {
+              pytanie: "Który gruczoł wydziela Kortyzol?",
+              poprawnaPodpowiedź: "Nadnercza",
+              opcje:["Nadnercza","Trzustka", "Przysadka", "Jądra"]
+          }
+      ]
+  },
+  {
+      gruczoł: "Trzustka",
+      pytania:[
+           // ... (poprzednie pytania) ...
+          {
+              pytanie: "Insulina jest produkowana przez...?",
+              poprawnaPodpowiedź: "Trzustka",
+              opcje:["Trzustka","Nadnercza", "Przysadka", "Jądra"]
+          },
+           {
+              pytanie: "Który gruczoł wydziela Glukagon?",
+              poprawnaPodpowiedź: "Trzustka",
+              opcje:["Trzustka","Nadnercza", "Przysadka", "Jądra"]
+          }
+      ]
+  },
+    {
+      gruczoł: "Jądra",
+      pytania:[
+           // ... (poprzednie pytania) ...
+          {
+              pytanie: "Testosteron jest produkowana przez...?",
+              poprawnaPodpowiedź: "Jądra",
+              opcje:["Jądra","Jajniki", "Przysadka", "Nadnercza"]
+          }
+      ]
+  },
+    {
+      gruczoł: "Jajniki",
+      pytania:[
+           // ... (poprzednie pytania) ...
+          {
+              pytanie: "Estrogeny są produkowane przez...?",
+              poprawnaPodpowiedź: "Jajniki",
+              opcje:["Jajniki","Jądra", "Przysadka", "Nadnercza"]
+          },
+            {
+              pytanie: "Który gruczoł wydziela progesteron?",
+              poprawnaPodpowiedź: "Jajniki",
+              opcje:["Jajniki","Jądra", "Przysadka", "Nadnercza"]
+          }
+      ]
   }
 ];
 
@@ -353,6 +495,10 @@ const QuizUkladuHormonalnego: React.FC = () => {
           </div>
           
           <div className="space-y-4 max-h-80 overflow-y-auto">
+          <RestartButton onClick={resetujQuiz}>
+            <Brain size={24} style={{ marginRight: '0.5rem' }} />
+            Rozpocznij ponownie
+          </RestartButton>
             <h3 className="text-xl font-bold text-gray-800 text-center">Historia Odpowiedzi</h3>
             {historiaOdpowiedzi.map((odpowiedź, index) => (
               <HistoryItem 
@@ -375,10 +521,7 @@ const QuizUkladuHormonalnego: React.FC = () => {
             ))}
           </div>
           
-          <RestartButton onClick={resetujQuiz}>
-            <Brain size={24} style={{ marginRight: '0.5rem' }} />
-            Rozpocznij ponownie
-          </RestartButton>
+
         </Card>
       </Container>
     );
