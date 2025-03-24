@@ -26,15 +26,31 @@ const pytaniaUkladuHormonalnego: Gruczoł[] = [
     gruczoł: 'Przysadka',
     pytania: [
       {
-        pytanie: "Który hormon odpowiada za wzrost?",
+        pytanie: "Który hormon odpowiada za wzrost organizmu,przemianę białek, tłuszczów i węglowodanów we wszystkich komórkach ?",
         poprawnaPodpowiedź: "hormon wzrostu",
         opcje: ["prolaktyna", "hormon wzrostu", "TSH", "ACTH"]
       },
       {
-        pytanie: "Który hormon pobudza wytwarzanie mleka u kobiet po porodzie?",
+        pytanie: "Który hormon pobudza wytwarzanie mleka u kobiet po porodzie i hamuje owulację?",
         poprawnaPodpowiedź: "prolaktyna",
         opcje: ["prolaktyna", "oksytocyna", "estrogen", "progesteron"]
+      },
+      {
+        pytanie: "Które hormony stymulują tarczycę, korę nadnerczy i gonady?",
+        poprawnaPodpowiedź: "hormony tropowe: TSH, ACTH, FSH i LH",
+        opcje: ["hormony tropowe: TSH, ACTH, FSH i LH", "oksytocyna i wazopresyna", "prolaktyna", "hormon wzrostu"]
+      },
+       {
+        pytanie: "Który hormon reguluje gospodarkę wodną?",
+        poprawnaPodpowiedź: "hormon antydiuretyczny (wazopresyna, ADH)",
+        opcje: ["hormon antydiuretyczny (wazopresyna, ADH)", "oksytocyna", "hormon wzrostu","prolaktyna"]
+      },
+      {
+        pytanie: "Który hormon wywołuje skurcze macicy podczas porodu oraz wydzielanie mieka po porodzie, a u mężczyzn - skurcze nasieniowodów podczas ejakulacji?",
+        poprawnaPodpowiedź: "Oksytocyna",
+        opcje: ["progesteron","Oksytocyna", "prolaktyna", "estrogen"]
       }
+
     ]
   },
   {
@@ -47,83 +63,93 @@ const pytaniaUkladuHormonalnego: Gruczoł[] = [
       }
     ]
   },
-  {
+    {
     gruczoł: 'Tarczyca',
     pytania: [
       {
-        pytanie: "Który hormon tarczycy wpływa na metabolizm?",
-        poprawnaPodpowiedź: "tyroksyna",
-        opcje: ["tyroksyna", "insulina", "kortyzol", "glukagon"]
+        pytanie: "Który hormon zmniejsza stężenie wapnia we krwi?",
+        poprawnaPodpowiedź: "kalcytonina",
+        opcje: ["kalcytonina", "tyroksyna", "parathormon", "tymozyna"]
       },
       {
-        pytanie: "Który hormon tarczycy reguluje poziom wapnia we krwi?",
-        poprawnaPodpowiedź: "kalcytonina",
-        opcje: ["kalcytonina", "parathormon", "aldosteron", "progesteron"]
+          pytanie: "Które hormony pobudzają metabolizm?",
+          poprawnaPodpowiedź: "tyroksyna i trójjodotyronina",
+          opcje: ["tyroksyna i trójjodotyronina", "kalcytonina", "adrenalina", "insulina"]
       }
     ]
   },
-  {
+    {
     gruczoł: 'Przytarczyce',
     pytania: [
       {
-        pytanie: "Jaki hormon wydzielają przytarczyce?",
+        pytanie: "Który hormon zwiększa stężenie wapnia we krwi?",
         poprawnaPodpowiedź: "parathormon",
-        opcje: ["parathormon", "insulina", "tyroksyna", "prolaktyna"]
+        opcje: ["parathormon", "kalcytonina", "tyroksyna", "tymozyna"]
       }
     ]
   },
-  {
-    gruczoł: 'Trzustka',
+   {
+    gruczoł: 'Grasica',
     pytania: [
       {
-        pytanie: "Który hormon obniża poziom glukozy we krwi?",
-        poprawnaPodpowiedź: "insulina",
-        opcje: ["insulina", "glukagon", "kortyzol", "adrenalina"]
-      },
-      {
-        pytanie: "Który hormon podnosi poziom glukozy we krwi?",
-        poprawnaPodpowiedź: "glukagon",
-        opcje: ["glukagon", "insulina", "tyroksyna", "somatotropina"]
+        pytanie: "Który hormon przyspiesza dojrzewanie limfocytów T?",
+        poprawnaPodpowiedź: "tymozyna",
+        opcje: ["tymozyna", "parathormon", "kalcytonina", "testosteron"]
       }
     ]
   },
-  {
+     {
     gruczoł: 'Nadnercza',
     pytania: [
       {
-        pytanie: "Który hormon nadnerczy jest uwalniany w sytuacjach stresowych?",
+        pytanie: "Który hormon powoduje wzrost ciśnienia krwi, częstotliwości skurczów serca, stężenia glukozy we krwi oraz częstotliwości oddechów?",
         poprawnaPodpowiedź: "adrenalina",
-        opcje: ["adrenalina", "insulina", "prolaktyna", "glukagon"]
+        opcje: ["adrenalina", "kortyzol", "insulina", "glukagon"]
       },
       {
-        pytanie: "Który hormon nadnerczy reguluje poziom sodu i potasu?",
-        poprawnaPodpowiedź: "aldosteron",
-        opcje: ["aldosteron", "kortyzol", "adrenalina", "testosteron"]
+          pytanie: "Który hormon działa przeciwzapalnie, Powoduje wzrost stężenia glukozy we krwi?",
+          poprawnaPodpowiedź: "kortyzol",
+          opcje: ["adrenalina", "kortyzol", "insulina", "glukagon"]
       }
     ]
   },
-  {
-    gruczoł: 'Jajniki',
+     {
+    gruczoł: 'Trzustka',
     pytania: [
       {
-        pytanie: "Jaki hormon odpowiada za rozwój cech płciowych u kobiet?",
-        poprawnaPodpowiedź: "estrogen",
-        opcje: ["estrogen", "progesteron", "testosteron", "oksytocyna"]
+        pytanie: "Który hormon obniża poziom glukozy we krwi i powoduje jej gromadzenie w wątrobie w postaci glikogenu?",
+        poprawnaPodpowiedź: "insulina",
+        opcje: ["insulina", "glukagon", "adrenalina", "kortyzol"]
       },
-      {
-        pytanie: "Który hormon przygotowuje organizm kobiety do ciąży?",
-        poprawnaPodpowiedź: "progesteron",
-        opcje: ["progesteron", "estrogen", "testosteron", "adrenalina"]
+       {
+        pytanie: "Który hormon podwyższa poziom glukozy we krwi przez stymulację rozkładu glikogenu?",
+        poprawnaPodpowiedź: "glukagon",
+        opcje: ["glukagon","insulina", "adrenalina", "kortyzol"]
       }
     ]
   },
-  {
+    {
     gruczoł: 'Jądra',
     pytania: [
       {
-        pytanie: "Który hormon odpowiada za rozwój cech płciowych u mężczyzn?",
+        pytanie: "Który hormon odpowiada za rozwój męskich narządów rozrodczych?",
         poprawnaPodpowiedź: "testosteron",
-        opcje: ["testosteron", "progesteron", "estrogen", "kortyzol"]
+        opcje: ["testosteron", "estrogen", "progesteron", "tymozyna"]
+      }
+    ]
+  },
+   {
+    gruczoł: 'Jajniki',
+    pytania: [
+      {
+        pytanie: "Który hormon odpowiada za rozwój żeńskich cech płciowych?",
+        poprawnaPodpowiedź: "estrogeny",
+        opcje: ["estrogeny", "progesteron", "testosteron", "tymozyna"]
+      },
+      {
+           pytanie: "Który hormon umożliwia prawidłowy przebieg ciąży i Powoduje pogrubianie się błony śluzowej macicy podczas cyklu miesiączkowego?",
+          poprawnaPodpowiedź: "progesteron",
+          opcje: ["progesteron", "estrogen", "testosteron", "tymozyna"]
       }
     ]
   }
